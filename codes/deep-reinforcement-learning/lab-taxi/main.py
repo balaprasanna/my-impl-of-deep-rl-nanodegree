@@ -4,5 +4,5 @@ import gym
 import numpy as np
 
 env = gym.make('Taxi-v2')
-agent = Agent()
+agent = Agent(env.nA)
 avg_rewards, best_avg_reward = interact(env, agent)
